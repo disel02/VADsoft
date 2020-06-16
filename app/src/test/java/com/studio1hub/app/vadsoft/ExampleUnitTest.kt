@@ -1,4 +1,4 @@
-package com.studio1hub.app.myapplication
+package com.studio1hub.app.vadsoft
 
 import org.junit.Test
 
