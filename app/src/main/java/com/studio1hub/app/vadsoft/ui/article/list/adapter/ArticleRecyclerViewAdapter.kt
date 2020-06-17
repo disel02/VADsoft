@@ -33,24 +33,12 @@ class ArticleRecyclerViewAdapter(private val article: ArrayList<Article>) : Recy
                 tvarticletitle.text = article.media.title
                 tvarticleurl.text = article.media.url
                 tvarticlelikes.text = "${NumFormat.numConvert(article.likes.toDouble(), 0)} Likes"
-                tvarticlecomments.text = "${numFormat(article.comments.toDouble(), 0)} Comments"
+                tvarticlecomments.text = "${NumFormat.numConvert(article.comments.toDouble(), 0)} Comments"
 
                 tvarticleurl.setOnClickListener {
                     context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(article.media.url)))
                 }
             }
-        }
-
-        private val c = charArrayOf('k', 'm', 'b', 't')
-
-        private fun numFormat(n: Double, iteration: Int): String? {
-            val d = n.toLong() / 100 / 10.0
-            val isRound =
-                d * 10 % 10 == 0.0
-            return if (d < 1000)
-                (if (d > 99.9 || isRound || !isRound && d > 9.99)
-                    d.toInt() * 10 / 10 else d.toString() + ""
-                        ).toString() + "" + c[iteration] else numFormat(d, iteration + 1)
         }
     }
 
