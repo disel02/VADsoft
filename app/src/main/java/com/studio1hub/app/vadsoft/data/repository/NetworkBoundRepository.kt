@@ -1,5 +1,6 @@
 package com.studio1hub.app.vadsoft.data.repository
 
+import android.util.Log
 import androidx.annotation.MainThread
 import androidx.annotation.WorkerThread
 import com.studio1hub.app.vadsoft.utils.State
@@ -35,7 +36,7 @@ abstract class NetworkBoundRepository<RESULT,REQUEST>{
         }
         catch (e: Exception)
         {
-            emit(State.error("Error: $e"))
+            emit(State.error("Please check your network!"))
         }
 
         emitAll(fetchFromLocal().map {

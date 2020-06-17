@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.studio1hub.app.vadsoft.ui.CategoryActivity">
+
+    <Button
+        android:id="@+id/btnarticle"
+        style="@style/CategoryButton"
+        android:text="@string/category_article" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/btnuser"
+        style="@style/CategoryButton"
+        android:text="@string/category_user" />
+
+</LinearLayout>

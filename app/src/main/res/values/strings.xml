@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">VADsoft</string>
+
+    <string name="appbar_user_list">Users List</string>
+    <string name="appbar_user_detail">User Details</string>
+    <string name="appbar_article_list">Article List</string>
+    <string name="appbar_article_detail">Article Details</string>
+    <string name="appbar_category">Select Menu</string>
+
+    <string name="category_user">Users</string>
+    <string name="category_article">Articles</string>
+
+    <string name="user_name">User Name</string>
+    <string name="user_designation">Designation</string>
+    <string name="user_city">City</string>
+
+    <string name="article_title">Article Title</string>
+    <string name="article_url">Article Url</string>
+    <string name="article_image">Article Image</string>
+
+    <string name="like">Likes</string>
+    <string name="comment">Comments</string>
 </resources>

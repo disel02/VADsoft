@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    tools:context="com.studio1hub.app.vadsoft.ui.article.detail.ArticleDetailActivity">
+
+    <ImageView
+        android:id="@+id/ivarticleimg"
+        style="@style/ArticleImage"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/article_image"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/tvarticlecontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="6"
+        tools:text="@tools:sample/lorem/random" />
+
+    <TextView
+        android:id="@+id/tvarticletitle"
+        style="@style/TitleText"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/article_title" />
+
+    <TextView
+        android:id="@+id/tvarticleurl"
+        style="@style/UrlText"
+        android:layout_marginBottom="10dp"
+        android:text="@string/article_url" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvarticlelikes"
+            style="@style/LikeComment"
+            android:text="@string/like" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvarticlecomments"
+            style="@style/LikeComment"
+            android:text="@string/comment" />
+
+    </LinearLayout>
+
+</LinearLayout>

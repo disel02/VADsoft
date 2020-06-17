@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.studio1hub.app.vadsoft.ui.user.detail.UserDetailActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <ImageView
+        android:id="@+id/ivuserprofile"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/tvusername"
+        style="@style/TitleText"
+        android:text="@string/user_name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/tvuserdesignation"
+        style="@style/NormalText"
+        android:text="@string/user_designation" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/tvusercity"
+        style="@style/CityText"
+        android:text="@string/user_city" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/tvuserabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        tools:text="@tools:sample/lorem/random" />
+
+</LinearLayout>

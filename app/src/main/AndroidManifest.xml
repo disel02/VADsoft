@@ -12,9 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.studio1hub.app.vadsoft.ui.main.MainActivity">
+        <activity android:name=".ui.article.list.ArticleListActivity"></activity>
+        <activity android:name=".ui.user.detail.UserDetailActivity" />
+        <activity android:name=".ui.user.list.UserListActivity" />
+        <activity android:name=".ui.article.detail.ArticleDetailActivity" />
+        <activity android:name=".ui.CategoryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
